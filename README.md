@@ -13,7 +13,7 @@ A CCS full node for building applications and services with Node.js. A node is e
     ```  
 2. Install mongo https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/  
 
-3. Install ccs-bitcore https://github.com/ccsproject/ccs-bitcore - with ZMQ ! 
+3. Install ccs-bitcore https://github.com/saqarmax-arm/ccs-bitcore - with ZMQ ! 
 
     ```bash
     # with ZMQ
@@ -22,7 +22,7 @@ A CCS full node for building applications and services with Node.js. A node is e
 4. Install ccscore-node  
 
     ```bash
-    npm i https://github.com/ccsproject/ccscore-node.git#master
+    npm i https://github.com/saqarmax-arm/ccscore-node.git#master
 
     $(npm bin)/ccscore-node create mynode
 
@@ -79,8 +79,8 @@ A CCS full node for building applications and services with Node.js. A node is e
 
 There are several add-on services available to extend the functionality of CcScore:
 
-- [CCS Insight API](https://github.com/ccsproject/insight-api)
-- [CCS Explorer](https://github.com/ccsproject/ccs-explorer)
+- [CCS Insight API](https://github.com/saqarmax-arm/insight-api)
+- [CCS Explorer](https://github.com/saqarmax-arm/ccs-explorer)
 
 ## Contributing
 

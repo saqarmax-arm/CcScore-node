@@ -129,7 +129,7 @@ Edit `ccscore-node.json` with something similar to:
 }
 ```
 
-**Note**: To install services [ccs-insight-api](https://github.com/ccsproject/insight-api) and [ccs-explorer](https://github.com/ccsproject/ccs-explorer) you'll need to clone the repositories locally.
+**Note**: To install services [ccs-insight-api](https://github.com/saqarmax-arm/insight-api) and [ccs-explorer](https://github.com/saqarmax-arm/ccs-explorer) you'll need to clone the repositories locally.
 
 Setup symlinks for all of the services and dependencies:
 
