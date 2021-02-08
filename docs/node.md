@@ -14,17 +14,17 @@ A node represents a collection of services that are loaded together. For more in
 
 ```js
 
-var index = require('qtumcore-node');
-var Qtum = index.services.Qtum;
+var index = require('ccscore-node');
+var CcS = index.services.CcS;
 var Node = index.Node;
 
 var configuration = {
-  datadir: '/home/user/.qtum',
+  datadir: '/home/user/.ccs',
   network: 'testnet',
   services: [
     {
-      name: 'qtumd',
-      module: Qtum,
+      name: 'ccsd',
+      module: CcS,
       config: {}
     }
   ]
@@ -37,7 +37,7 @@ node.start(function() {
 });
 
 node.on('ready', function() {
-  console.log('Qtumcoin Node Ready');
+  console.log('CcScoin Node Ready');
 });
 
 node.on('error', function(err) {

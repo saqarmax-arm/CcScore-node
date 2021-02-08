@@ -3,7 +3,7 @@
 var should = require('chai').should();
 var sinon = require('sinon');
 var proxyquire = require('proxyquire');
-var QtumService = require('../../lib/services/qtumd');
+var CcSService = require('../../lib/services/ccsd');
 var index = require('../../lib');
 var log = index.log;
 
@@ -19,12 +19,12 @@ describe('#start', function() {
 
   describe('will dynamically create a node from a configuration', function() {
 
-    it('require each qtumcore-node service with default config', function(done) {
+    it('require each ccscore-node service with default config', function(done) {
       var node;
       var TestNode = function(options) {
         options.services[0].should.deep.equal({
-          name: 'qtumd',
-          module: QtumService,
+          name: 'ccsd',
+          module: CcSService,
           config: {
             spawn: {
               datadir: './data'
@@ -48,10 +48,10 @@ describe('#start', function() {
         path: __dirname,
         config: {
           services: [
-            'qtumd'
+            'ccsd'
           ],
           servicesConfig: {
-            qtumd: {
+            ccsd: {
               spawn: {
                 datadir: './data'
               }
@@ -87,12 +87,12 @@ describe('#start', function() {
         done();
       });
     });
-    it('require each qtumcore-node service with explicit config', function(done) {
+    it('require each ccscore-node service with explicit config', function(done) {
       var node;
       var TestNode = function(options) {
         options.services[0].should.deep.equal({
-          name: 'qtumd',
-          module: QtumService,
+          name: 'ccsd',
+          module: CcSService,
           config: {
             param: 'test',
             spawn: {
@@ -116,10 +116,10 @@ describe('#start', function() {
         path: __dirname,
         config: {
           services: [
-            'qtumd'
+            'ccsd'
           ],
           servicesConfig: {
-            'qtumd': {
+            'ccsd': {
               param: 'test',
               spawn: {
                 datadir: './data'
